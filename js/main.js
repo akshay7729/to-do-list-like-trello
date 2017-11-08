@@ -18,6 +18,7 @@ function newTodayTask(){
 	li.setAttribute('draggable', true);
 	li.setAttribute('ondragstart', 'dragStart(event)');
 	li.setAttribute('id', 'id_today' + Math.random().toString(36));
+	li.setAttribute('onclick', 'openModal(this.id)');
 	var todayValue = document.getElementById("todayinput").value;
 	var t = document.createTextNode(todayValue);
 	li.appendChild(t);
@@ -34,6 +35,7 @@ function newWeekTask(){
 	li.setAttribute('draggable', true);
 	li.setAttribute('ondragstart', 'dragStart(event)');
 	li.setAttribute('id', 'id_week' + Math.random().toString(36));
+	li.setAttribute('onclick', 'openModal(this.id)');
 	var weekValue = document.getElementById("weekinput").value;
 	var t = document.createTextNode(weekValue);
 	li.appendChild(t);
@@ -50,6 +52,7 @@ function newMonthTask(){
 	li.setAttribute('draggable', true);
 	li.setAttribute('ondragstart', 'dragStart(event)');
 	li.setAttribute('id', 'id_month' + Math.random().toString(36));
+	li.setAttribute('onclick', 'openModal(this.id)');
 	var weekValue = document.getElementById("monthinput").value;
 	var t = document.createTextNode(weekValue);
 	li.appendChild(t);
@@ -60,12 +63,30 @@ function newMonthTask(){
 	}
 }
 
-// function deleteList(){
-// 	var deleteList = this.document.getElementById('today_list');
-// 	deleteList.style.display = "none";
-// }
+// delete list
 
 function deleteList(id){
     var deleteList = this.document.getElementById(id);
     deleteList.style.display = "none";
 }
+
+//modal
+
+function openModal(id_got){
+	var modalOpen = document.getElementById('modal');
+	modalOpen.style.display = "block";
+	var i = id_got;
+	var getId = this.document.getElementById(i);
+	var modalHeader = this.document.getElementById('m_header_title');
+	modalHeader.innerHTML = getId.innerHTML;
+}
+
+
+
+
+
+
+
+
+
+

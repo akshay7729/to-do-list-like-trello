@@ -15,17 +15,17 @@
 			<h4>Today <span class="delete_list" onclick="deleteList('today_list')"><img src="img/delete.png" alt="delete list"></span></h4>
 			<input type="text" id="todayinput" class="addinput" placeholder="add new task">
   			<button onclick="newTodayTask()" class="add">Add</button>
-			 <li ondragstart="dragStart(event)" draggable="true" id="ta">Today's Task 1</li>
-			 <li ondragstart="dragStart(event)" draggable="true" id="tb">Today's Task 2</li>
+			 <li ondragstart="dragStart(event)" draggable="true" id="ta" onclick="openModal(this.id)">Today's Task 1</li>
+			 <li ondragstart="dragStart(event)" draggable="true" id="tb" onclick="openModal(this.id)">Today's Task 2</li>
 		</ul>
 
 		<ul class="board" ondrop="drop(event)" ondragover="allowDrop(event)" id="week_list">
 			<h4>This Week <span class="delete_list" onclick="deleteList('week_list')"><img src="img/delete.png" alt="delete list"></span></h4>
 			<input type="text" id="weekinput" class="addinput" placeholder="add new task">
   			<button onclick="newWeekTask()" class="add">Add</button>
-			<li ondragstart="dragStart(event)" draggable="true" id="wa">Week's task 1</li>
-			 <li ondragstart="dragStart(event)" draggable="true" id="wb">Week's task 2</li>
-			 <li ondragstart="dragStart(event)" draggable="true" id="wc">Week's task 3</li>
+			<li ondragstart="dragStart(event)" draggable="true" id="wa" onclick="openModal(this.id)">Week's task 1</li>
+			 <li ondragstart="dragStart(event)" draggable="true" id="wb" onclick="openModal(this.id)">Week's task 2</li>
+			 <li ondragstart="dragStart(event)" draggable="true" id="wc" onclick="openModal(this.id)">Week's task 3</li>
 		</ul>
 
 		<ul class="board" ondrop="drop(event)" ondragover="allowDrop(event)" id="month_list">
@@ -33,9 +33,13 @@
 			<input type="text" id="monthinput" class="addinput" placeholder="add new task">
   			<button onclick="newMonthTask()" class="add">Add</button>
 			<li class="board_elements" ondragstart="dragStart(event)" draggable="true"
-			 id="m1">Month's Task 1</li>
+			 id="m1" onclick="openModal(this.id)">Month's Task 1</li>
 		</ul>
-		
+		<div class="modal" id="modal">
+			<div class="modal_content" id="modal_content">
+				<div class="m_header"><p id="m_header_title"></p> <span class="close" onclick="document.getElementById('modal').style.display = 'none'">&#x2715;</span></div>
+			</div>
+		</div>	
 	</div>
 </body>
 </html>
