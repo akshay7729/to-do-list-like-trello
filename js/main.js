@@ -72,13 +72,22 @@ function deleteList(id){
 
 //modal
 
+var currentOpened;
+
 function openModal(id_got){
 	var modalOpen = document.getElementById('modal');
 	modalOpen.style.display = "block";
 	var i = id_got;
+	currentOpened = id_got;
 	var getId = this.document.getElementById(i);
 	var modalHeader = this.document.getElementById('m_header_title');
 	modalHeader.innerHTML = getId.innerHTML;
+}
+
+function archive(){
+	var modal = this.document.getElementById('modal');
+	modal.style.display = "none";
+	document.getElementById(currentOpened).style.display = 'none';
 }
 
 

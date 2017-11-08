@@ -147,7 +147,38 @@ body {
 	font-size: 34px;
 	color:#333;
 }
-
+.m_footer {
+    position: absolute;
+    text-align: center;
+    bottom: 70px;
+}
+.m_footer button {
+	font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    padding: 7px 15px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    -ms-box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    -o-box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    background: #287abf;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.m_footer button:hover{
+	padding: 7px 20px;
+}
+.m_footer button:focus{
+	outline: none;
+	background: #333;
+}
 
 /* media queries */
 @media screen and (max-width: 656px){
