@@ -84,12 +84,21 @@ function openModal(id_got){
 	modalHeader.innerHTML = getId.innerHTML;
 }
 
+//archive list items
+
 function archive(){
 	var modal = this.document.getElementById('modal');
 	modal.style.display = "none";
 	document.getElementById(currentOpened).style.display = 'none';
 }
 
+// comments 
+
+function getComments(){
+	c = commentsBox.value;
+  	document.getElementById("commentsSec").innerHTML +=  c + '<br /><br />';
+  	document.getElementById("commentsBox").value = "";
+}
 
 
 

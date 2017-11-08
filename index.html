@@ -38,6 +38,11 @@
 		<div class="modal" id="modal">
 			<div class="modal_content" id="modal_content">
 				<div class="m_header"><p id="m_header_title"></p> <span class="close" onclick="document.getElementById('modal').style.display = 'none'">&#x2715;</span></div>
+				<div class="comments">
+					<p id="commentsSec"></p>
+					<textarea rows="6" id="commentsBox"></textarea>
+					<button class="post_comment" onclick="getComments()" value="Enter">Post Comment</button>
+				</div>
 				<div class="m_footer">
 					<button class="archive" onclick="archive()">Archive</button>
 				</div>
