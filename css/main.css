@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background:#287abf;
+	font-family: 'Roboto', sans-serif;
+}
+.main_banner {
+	margin-top: 60px;
+	padding-left: 10px;
+}
+.main_banner h3 {
+	color:#f0f0f0;
+	padding-bottom: 15px;
+}
+.main_banner .board {
+	border:1px solid #E2E4E6;
+	display: inline-block;
+	width: 300px;
+	vertical-align: top;
+	margin-right: 10px;
+	background:#E2E4E6;
+	padding: 5px;
+	color:#333;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	max-height: 100%;
+	min-height: 100px;
+	padding-bottom: 30px;
+}
+.board {
+	list-style: none;
+}
+.board h4 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:500;
+	margin-bottom: 10px;
+}
+.board li {
+	background: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:400;
+	letter-spacing: 0.6px;
+	margin-bottom: 10px;
+	padding: 7px;
+	margin-top: 5px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	line-height: 1.4;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+.whiledrag {
+	background: green;
+}
+.addinput {
+	border: 2px solid #287abf;
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+}
+.addinput:focus {
+	outline: none;
+}
+.add {
+	border: 1px solid #287abf;
+    background: #287abf;
+    color: #fff;
+    padding: 6px 13px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: -5px;
+    position: absolute;
+}
+.add:focus{
+	outline:none;
+}
+.close {
+	background: #000;
+	color: green;
+}
