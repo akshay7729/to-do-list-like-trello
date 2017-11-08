@@ -12,16 +12,16 @@
 	<div class="main_banner">
 		<h3>Welcome Board</h3>
 		<ul class="board" ondrop="drop(event)" ondragover="allowDrop(event)" id="today_list">
-			<h4>Today</h4>
-			<input type="text" id="todayinput" class="addinput" placeholder="enter new task">
+			<h4>Today <span class="delete_list" onclick="deleteList('today_list')"><img src="img/delete.png" alt="delete list"></span></h4>
+			<input type="text" id="todayinput" class="addinput" placeholder="add new task">
   			<button onclick="newTodayTask()" class="add">Add</button>
 			 <li ondragstart="dragStart(event)" draggable="true" id="ta">Today's Task 1</li>
 			 <li ondragstart="dragStart(event)" draggable="true" id="tb">Today's Task 2</li>
 		</ul>
 
 		<ul class="board" ondrop="drop(event)" ondragover="allowDrop(event)" id="week_list">
-			<h4>This Week</h4>
-			<input type="text" id="weekinput" class="addinput" placeholder="enter new task">
+			<h4>This Week <span class="delete_list" onclick="deleteList('week_list')"><img src="img/delete.png" alt="delete list"></span></h4>
+			<input type="text" id="weekinput" class="addinput" placeholder="add new task">
   			<button onclick="newWeekTask()" class="add">Add</button>
 			<li ondragstart="dragStart(event)" draggable="true" id="wa">Week's task 1</li>
 			 <li ondragstart="dragStart(event)" draggable="true" id="wb">Week's task 2</li>
@@ -29,8 +29,8 @@
 		</ul>
 
 		<ul class="board" ondrop="drop(event)" ondragover="allowDrop(event)" id="month_list">
-			<h4>This Month</h4>
-			<input type="text" id="monthinput" class="addinput" placeholder="enter new task">
+			<h4>This Month <span class="delete_list" onclick="deleteList('month_list')"><img src="img/delete.png" alt="delete list"></span></h4>
+			<input type="text" id="monthinput" class="addinput" placeholder="add new task">
   			<button onclick="newMonthTask()" class="add">Add</button>
 			<li class="board_elements" ondragstart="dragStart(event)" draggable="true"
 			 id="m1">Month's Task 1</li>

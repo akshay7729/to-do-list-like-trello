@@ -59,3 +59,13 @@ function newMonthTask(){
 		document.getElementById("month_list").appendChild(li);
 	}
 }
+
+// function deleteList(){
+// 	var deleteList = this.document.getElementById('today_list');
+// 	deleteList.style.display = "none";
+// }
+
+function deleteList(id){
+    var deleteList = this.document.getElementById(id);
+    deleteList.style.display = "none";
+}
